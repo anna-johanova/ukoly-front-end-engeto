@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  padding: 100px auto;
+  font-family: "parkinsans", sans-serif;
+  background-color: var(--text-main);
+}
+
+:root {
+  --block-aside: #242c34;
+  --text-aside-headline: #173ca2;
+  --text-aside: #3b3b3b;
+  --text-main: #b6e4fae6;
+  --visited: #e28743;
+}
+
+body {
+  width: 70%;
+  background-color: var(--text-main); /* Barva pozadí pro vizualizaci */
+  margin: 0 auto;
+}
+
+.container {
+  margin: 20px auto;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 1px 2px 8px var(--text-aside);
+  border-radius: 15px;
+}
+
+.portret {
+  height: 200px;
+  padding: 10px 5px;
+  border-radius: 25px;
+}
+
+.header-name {
+  display: block;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+  color: var(--block-aside);
+}
+
+.header-additional {
+  display: block;
+  font-style: italic;
+  font-size: 24px;
+  border-bottom: 2px solid var(--text-aside-headline);
+  text-align: center;
+  color: var(--block-aside);
+}
+
+.section {
+  margin: 20px auto;
+  flex: 1;
+}
+
+.section-shadow {
+  margin: 25px auto;
+  padding: 10px;
+  flex: 1;
+  border-radius: 15x;
+  padding: 10px 0;
+  box-shadow: 3px 5px 8px var(--text-aside);
+  border-radius: 15px;
+}
+
+.headline {
+  display: block;
+  padding: 10px 0;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: var(--text-aside-headline);
+  margin: 0 10px;
+}
+
+ul {
+  list-style-type: square;
+  list-style-position: inside;
+  color: var(--text-aside);
+  font-size: 12px;
+}
+
+.direct-contact {
+  color: var(--text-aside-headline);
+  text-decoration: none;
+}
+
+a:link {
+  color: var(--text-aside-headline);
+}
+
+a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+a:visited {
+  color: var(--visited);
+}
+
+.table {
+  width: auto;
+  margin: 20px 5px;
+  border-collapse: collapse;
+  bortable-layout: auto;
+}
+
+th {
+  background-color: var(--block-aside);
+  color: whitesmoke;
+  text-align: left;
+  font-weight: bold;
+  font-size: 10px;
+  white-space: nowrap;
+  margin: 5px 0 0 0;
+}
+
+td {
+  font-size: 10px;
+}
+
+tr:nth-child(even) {
+  background-color: #b08989;
+}
+
+tr:nth-child(odd) {
+  background-color: white;
+}
+
+.company-name {
+  font-weight: bold;
+}
